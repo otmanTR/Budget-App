@@ -3,12 +3,7 @@ class Ability
   def initialize(user)
     user ||= User.new
 
-    can :manage, Recipe, user_id: user.id
-
-    if user.admin?
-      can :manage, :all
-    else
-      can :read, :all
-    end
+    can :manage, Group, user_id: user.id if user.present?
+    can :manage, Entity, author_id: user.id if user.present?
   end
 end
