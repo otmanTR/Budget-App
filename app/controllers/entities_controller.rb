@@ -5,26 +5,27 @@ class EntitiesController < ApplicationController
     end
 
     def new
-        @entity = Entitiy.new
+        @entity = Entity.new
     end
 
     def create
-        @entitiy = group.entitiys.new(entitiy_params)
-        @entitiy.group = group
-        @entitiy.author_id = current_user.id
+        @entity = current_user.entities.new(entity_params)
+        @entity.group_id = params[:group_id]
+        @entity.author_id = current_user.id
+        @group = Group.find(params[:group_id])
     
-        if @entitiy.save
-          flash[:success] = 'entitiy created successfully.'
-          redirect_to 
+        if @entity.save
+          flash[:success] = 'entity created successfully.'
+          redirect_to group_entities_path
         else
-          flash[:danger] = 'entitiy could not be created.'
+          flash[:danger] = 'entity could not be created.'
           render :new
         end
       end
 
       private
   
-    def entitiy_params
-      params.require(:entitiy).permit(:name, :amount)
+    def entity_params
+      params.require(:entity).permit(:name, :amount)
     end
   end
