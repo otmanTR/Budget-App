@@ -1,29 +1,14 @@
-<h1 class="field">Create new Recipe</h1>
+<h1 class="field">Create new Category</h1>
 
-<%= form_with model: @recipe, url: recipes_path do |form| %>
+<%= form_with model: @group, url: groups_path do |form| %>
   <div class="field">
     <%= form.label :name %>
     <%= form.text_field :name %>
   </div>
   <div class="field">
-    <%= form.label :description %>
-    <%= form.text_area :description %>
+    <%= form.label :icon %>
+    <%= form.text_area :icon %>
   </div>
-  <div class="field">
-    <%= form.label :preparation_time %>
-    <%= form.text_field :preparation_time %>
-  </div>
-
-  <div class="field">
-    <%= form.label :cooking_time %>
-    <%= form.text_field :cooking_time %>
-  </div>
-
-  <div class="field">
-    <%= form.label :public %>
-    <%= form.check_box :public %>
-  </div>
-
   <div class="actions">
     <%= form.submit %>
   </div>

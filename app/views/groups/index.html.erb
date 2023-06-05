@@ -1,8 +1,20 @@
-<%= render 'shared/navbar' %>
 
 <div class='category_container'>
     <h1>Categories</h1>
-   
 
+      <%@groups.each do |group|%>
+     <div class='group'>
+        <div class='group_title'>
+            <h1><%= link_to group.name, group_path(group), class:'group_name' %></h1>
+            t
 
+        </div>
+        <p class="group-icon"><%= group.icon %></p>
+         <p class="date_time"><%= group.created_at.strftime("%Y-%m-%d") %></p>
+ </div>
+    <%end%>
+    
+    <div class='group_add'>
+        <h2><%= link_to 'Add new group', new_group_path, class:'group_add_btn' %></h2>
+    </div>
 </div>
