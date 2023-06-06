@@ -1,10 +1,7 @@
 class EntitiesController < ApplicationController
-    def index
-        @group = Group.find(params[:group_id])
-        @entities = @group.entities
-    end
 
     def new
+      @groups = Group.all 
         @entity = Entity.new
     end
 
@@ -21,6 +18,13 @@ class EntitiesController < ApplicationController
           flash[:danger] = 'entity could not be created.'
           render :new
         end
+      end
+
+      def destroy
+        @entity = entity.find(params[:id])
+        @entity.destroy!
+        flash[:notice] = 'entity has been successfully deleted!'
+        redirect_to group_entities_path
       end
 
       private

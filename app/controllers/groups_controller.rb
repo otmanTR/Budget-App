@@ -1,8 +1,17 @@
 class GroupsController < ApplicationController
+  before_action :authenticate_user!
     def index
       @user = User.find(current_user.id)
-      @groups = @user.groups
+      @groups = Group.where(user_id: @user.id).includes(:entities)
     end
+
+  
+      def show
+        @user = current_user
+        @group = Group.find(params[:id])
+        @entities = @group.entities.order('created_at DESC')
+      end
+   
   
     def new
       @group = Group.new
