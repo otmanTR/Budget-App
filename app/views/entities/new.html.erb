@@ -1,18 +1,18 @@
 <h1 class="field">Create new Transections</h1>
 
-<%= form_with model: @group, url: groups_path do |form| %>
+<%= form_with model: @entity, url: group_entities_path(group_id:@group.id) do |form| %>
   <div class="field">
     <%= form.label :name %>
     <%= form.text_field :name %>
   </div>
   <div class="field">
-    <%= form.label :icon %>
-    <%= form.text_area :icon %>
+    <%= form.label :amount %>
+    <%= form.text_area :amount %>
   </div>
   
   <div class="custom-form-field-selection">
     <%= form.label :group_id, 'Select Groups', class:'text-form' %> 
-    <%= form.select :group_ids, @groups.map {|item| [item.name,item.id]},
+    <%= form.select :group_id, @groups.map {|item| [item.name,item.id]},
     {include_hidden: false},
     {multiple: true, required: true, size: 5,class:'custom-form-field-multi-select'} %>
   </div>

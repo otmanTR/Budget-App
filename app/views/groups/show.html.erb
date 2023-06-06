@@ -1,7 +1,7 @@
 
 <div class='category_container'>
     <h1>Transections</h1>
- <%@group.entities.each do |entity|%>
+ <%@entities.each do |entity|%>
      <div class='group'>
       
         <p class="group-icon"><%= entity.name %></p>
@@ -11,7 +11,7 @@
     
     
     <div class='group_add'>
-        <h2><%= link_to 'Add new entity', new_group_entity_path(:group_id), class:'group_add_btn' %></h2>
+        <h2><%= link_to 'Add new entity', new_group_entity_path(group_id:@group.id), class:'group_add_btn' %></h2>
     </div>
 
 
