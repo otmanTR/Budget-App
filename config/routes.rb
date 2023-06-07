@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
   devise_for :users
-  root 'groups#index'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  authenticated :user do
+    root 'groups#index', as: :authenticated_root
+  end
+  unauthenticated do
+    root 'splash#splash', as: :unauthenticated_root
+  end
 
-  # Defines the root path route ("/")
-  # root "articles#index"
   resources :users
   resources :groups, only: [:index, :new, :create, :destroy, :show] do
     resources :entities, only: [:new, :create, :destroy]
