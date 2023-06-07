@@ -1,48 +1,18 @@
-<section class="navbar --bs-primary">
- <ul class="nav_links">
-    <li><%= link_to 'Home', root_path %></li>
-  </ul>
-  <h2>Control Money</h2>
- 
-  <div>
+<header class="bg-primary text-white sticky-top">
+  <nav class="d-flex justify-content-between p-3 align-items-center text-center">   
+    <a href='/'><i class="fa-solid fa-arrow-left fs-1 text-white"></i></a>
+    <h2 class="m-0 p-0">Transactions</h2>
+      <div class="d-flex  text-decoration-none">
     <% if user_signed_in? %>
-      <p><%= link_to "Sign Out", destroy_user_session_path, data: {
+      <h3 class="m-0 p-0 text-decoration-none bg-light text-white"><%= link_to "Sign Out", destroy_user_session_path, data: {
         turbo_method: :delete,
-      } %></p>
+      }  %></h3>
     <% else %>
-      <p><%= link_to "Sign In", new_user_session_path %></p>
+      <h3 class="m-0 p-0 text-decoration-none bg-light text-white"><%= link_to "Sign In", new_user_session_path %></h3>
     <% end %>
-    
   </div>
-</section>
+  </nav> 
+</header>
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-  <div class="container-fluid bg-primary">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link disabled">Disabled</a>
-        </li>
-      </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
+
+

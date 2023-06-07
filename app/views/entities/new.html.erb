@@ -1,22 +1,36 @@
-<h1 class="field">Create new Transections</h1>
-
+<header class="bg-primary text-white fixed-top">
+  <nav class="d-flex justify-content-between p-3 align-items-center text-center">   
+    <a href='/'><i class="fa-solid fa-arrow-left fs-1 text-white"></i></a>
+    <h2 class="m-0 p-0">Create new Transections</h2>
+      <div class="d-flex  text-decoration-none">
+    <% if user_signed_in? %>
+      <h3><%= link_to "Sign Out", destroy_user_session_path, data: {
+        turbo_method: :delete,
+      } ,class:"m-0 p-0 text-decoration-none text-white" %></h3>
+    <% else %>
+      <h3><%= link_to "Sign In", new_user_session_path, class:"m-0 p-0 text-decoration-none text-white" %></h3>
+    <% end %>
+  </div>
+  </nav> 
+</header>
+<div class="d-flex flex-column text-center bg-white p-1 m-1">
 <%= form_with model: @entity, url: group_entities_path(group_id:@group.id) do |form| %>
   <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
+   
+    <%= form.text_field :name, placeholder:"Name", class:"form-control rounded-0" %>
   </div>
   <div class="field">
-    <%= form.label :amount %>
-    <%= form.text_area :amount %>
+    <%= form.text_area :amount, placeholder:"Amount", class:"form-control rounded-0" %>
   </div>
   
-  <div class="custom-form-field-selection">
-    <%= form.label :group_id, 'Select Groups', class:'text-form' %> 
+  <div class="d-flex flex-row justify-content-start m-2">
+    <%= form.label :group_id, 'Select Categories :   ', class:'text-form m-2 text-secondary' %> 
     <%= form.select :group_id, @groups.map {|item| [item.name,item.id]},
     {include_hidden: false},
-    {multiple: true, required: true, size: 5,class:'custom-form-field-multi-select'} %>
+    {multiple: true, required: true, size: 5,class:'custom-form-field-multi-select m-1'} %>
   </div>
-  <div class="actions">
-    <%= form.submit %>
+  <div class="d-flex flex-column fixed-bottom text-center bg-success w-100 p-3">
+    <%= form.submit "Save", class:"bg-success text-white" %>
   </div>
 <% end %>
+</div>
