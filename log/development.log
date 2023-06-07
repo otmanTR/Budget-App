@@ -8832,3 +8832,1026 @@ Processing by GroupsController#show as HTML
 Completed 200 OK in 18ms (Views: 8.8ms | ActiveRecord: 1.7ms | Allocations: 5073)
 
 
+Started GET "/" for 127.0.0.1 at 2023-06-07 09:54:57 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 14.2ms | Allocations: 5803)
+  Rendered groups/index.html.erb within layouts/application (Duration: 16.5ms | Allocations: 6649)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 6737)
+Completed 500 Internal Server Error in 95ms (ActiveRecord: 10.7ms | Allocations: 42590)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `foods_path' for #<ActionView::Base:0x0000000000d2c8>
+Did you mean?  font_path):
+    2:   <h1>Control Money</h1>
+    3:   <ul class="nav_links">
+    4:     <li><%= link_to 'Home', root_path %></li>
+    5:     <li><%= link_to 'Food', foods_path %></li>
+    6:     <li><%= link_to 'Recipes', recipes_path %></li>
+    7:     <li><%= link_to 'Public Recipes', public_recipes_path %></li>
+    8:   </ul>
+  
+app/views/navbar/_navbar.html.erb:5
+app/views/groups/index.html.erb:1
+Started GET "/" for 127.0.0.1 at 2023-06-07 09:56:39 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 15.6ms | Allocations: 4931)
+  Rendered groups/index.html.erb within layouts/application (Duration: 17.3ms | Allocations: 5377)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 5455)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 1.7ms | Allocations: 8467)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `foods_path' for #<ActionView::Base:0x0000000000d688>
+Did you mean?  font_path):
+    2:   <h1>Control Money</h1>
+    3:   <ul class="nav_links">
+    4:     <li><%= link_to 'Home', root_path %></li>
+    5:     <li><%= link_to 'Food', foods_path %></li>
+    6:     <li><%= link_to 'Food', foods_path %></li>
+    7:   </ul>
+    8:   <div>
+  
+app/views/navbar/_navbar.html.erb:5
+app/views/groups/index.html.erb:1
+Started GET "/" for 127.0.0.1 at 2023-06-07 09:56:43 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 15.3ms | Allocations: 4584)
+  Rendered groups/index.html.erb within layouts/application (Duration: 16.0ms | Allocations: 4646)
+  Rendered layout layouts/application.html.erb (Duration: 16.5ms | Allocations: 4718)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 1.0ms | Allocations: 6906)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `foods_path' for #<ActionView::Base:0x0000000000d980>
+Did you mean?  font_path):
+    2:   <h1>Control Money</h1>
+    3:   <ul class="nav_links">
+    4:     <li><%= link_to 'Home', root_path %></li>
+    5:     <li><%= link_to 'Food', foods_path %></li>
+    6:     <li><%= link_to 'Food', foods_path %></li>
+    7:   </ul>
+    8:   <div>
+  
+app/views/navbar/_navbar.html.erb:5
+app/views/groups/index.html.erb:1
+Started GET "/" for 127.0.0.1 at 2023-06-07 09:56:55 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.7ms | Allocations: 397)
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.4ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.6ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 93.5ms | Allocations: 68549)
+  Rendered layout layouts/application.html.erb (Duration: 167.5ms | Allocations: 103537)
+Completed 200 OK in 180ms (Views: 161.5ms | ActiveRecord: 11.1ms | Allocations: 106361)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2023-06-07 09:57:00 +0300
+Processing by Devise::SessionsController#destroy as TURBO_STREAM
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 19ms (ActiveRecord: 0.5ms | Allocations: 5567)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 09:57:00 +0300
+Processing by GroupsController#index as TURBO_STREAM
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 416)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2023-06-07 09:57:00 +0300
+Processing by Devise::SessionsController#new as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.7ms | Allocations: 993)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 11.0ms | Allocations: 4622)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 7018)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.0ms | Allocations: 8651)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2023-06-07 09:57:07 +0300
+Processing by Devise::SessionsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"burak@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "burak@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 303 See Other in 268ms (ActiveRecord: 0.9ms | Allocations: 4469)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 09:57:07 +0300
+Processing by GroupsController#index as TURBO_STREAM
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.2ms | Allocations: 118)
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.3ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.3ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 3575)
+  Rendered layout layouts/application.html.erb (Duration: 11.0ms | Allocations: 5912)
+Completed 200 OK in 16ms (Views: 11.1ms | ActiveRecord: 1.4ms | Allocations: 8186)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 09:57:21 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.4ms | Allocations: 93)
+  [1m[36mGroup Load (0.8ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.8ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.6ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 15.8ms | Allocations: 3433)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 5645)
+Completed 200 OK in 30ms (Views: 19.4ms | ActiveRecord: 3.2ms | Allocations: 7644)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 09:57:22 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.4ms | Allocations: 93)
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.6ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.4ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 3433)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 5645)
+Completed 200 OK in 26ms (Views: 13.5ms | ActiveRecord: 2.5ms | Allocations: 7644)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 09:57:23 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.2ms | Allocations: 93)
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.3ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.3ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 3430)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 5642)
+Completed 200 OK in 20ms (Views: 12.4ms | ActiveRecord: 2.0ms | Allocations: 7641)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 09:57:23 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.4ms | Allocations: 93)
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.6ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.4ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 11.3ms | Allocations: 3433)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 5645)
+Completed 200 OK in 28ms (Views: 14.4ms | ActiveRecord: 2.5ms | Allocations: 7640)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 09:57:23 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.7ms | Allocations: 93)
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.5ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.5ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 13.5ms | Allocations: 3430)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 5642)
+Completed 200 OK in 28ms (Views: 16.5ms | ActiveRecord: 2.3ms | Allocations: 7637)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 09:57:24 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.5ms | Allocations: 93)
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.7ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.5ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 14.4ms | Allocations: 3430)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 5642)
+Completed 200 OK in 33ms (Views: 17.5ms | ActiveRecord: 3.2ms | Allocations: 7625)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 10:14:24 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.9ms | Allocations: 393)
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (1.0ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.7ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 19.4ms | Allocations: 4305)
+  Rendered layout layouts/application.html.erb (Duration: 29.4ms | Allocations: 6993)
+Completed 200 OK in 75ms (Views: 29.8ms | ActiveRecord: 18.4ms | Allocations: 12989)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 10:14:25 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.6ms | Allocations: 93)
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.7ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.3ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 3430)
+  Rendered layout layouts/application.html.erb (Duration: 13.9ms | Allocations: 5642)
+Completed 200 OK in 31ms (Views: 13.4ms | ActiveRecord: 4.2ms | Allocations: 7752)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 10:14:26 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.6ms | Allocations: 93)
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.4ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.3ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 3430)
+  Rendered layout layouts/application.html.erb (Duration: 12.9ms | Allocations: 5642)
+Completed 200 OK in 29ms (Views: 12.5ms | ActiveRecord: 3.5ms | Allocations: 7643)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 10:14:26 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.2ms | Allocations: 93)
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.4ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.9ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 26.0ms | Allocations: 3430)
+  Rendered layout layouts/application.html.erb (Duration: 31.3ms | Allocations: 5658)
+Completed 200 OK in 47ms (Views: 30.3ms | ActiveRecord: 4.2ms | Allocations: 7659)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 10:14:26 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.2ms | Allocations: 93)
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.4ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.3ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 10.9ms | Allocations: 3430)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 5642)
+Completed 200 OK in 29ms (Views: 13.4ms | ActiveRecord: 2.6ms | Allocations: 7638)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 10:14:27 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.8ms | Allocations: 93)
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.5ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.4ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 12.9ms | Allocations: 3430)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 5642)
+Completed 200 OK in 27ms (Views: 15.4ms | ActiveRecord: 2.2ms | Allocations: 7639)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 10:16:38 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.3ms | Allocations: 93)
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.7ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.4ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 3430)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 5642)
+Completed 200 OK in 29ms (Views: 13.1ms | ActiveRecord: 2.1ms | Allocations: 7647)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 10:27:03 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.2ms | Allocations: 93)
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.5ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.7ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 11.5ms | Allocations: 3433)
+  Rendered layout layouts/application.html.erb (Duration: 14.2ms | Allocations: 5645)
+Completed 200 OK in 50ms (Views: 13.0ms | ActiveRecord: 15.0ms | Allocations: 10796)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 10:44:48 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.5ms | Allocations: 93)
+  [1m[36mGroup Load (0.7ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (1.0ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.9ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 15.0ms | Allocations: 3433)
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 5645)
+Completed 200 OK in 58ms (Views: 18.7ms | ActiveRecord: 15.1ms | Allocations: 10642)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 10:54:47 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.8ms | Allocations: 397)
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.4ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.4ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 13.4ms | Allocations: 4314)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 7002)
+Completed 200 OK in 44ms (Views: 19.9ms | ActiveRecord: 6.9ms | Allocations: 12815)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 10:57:42 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.9ms | Allocations: 396)
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.5ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.8ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 17.9ms | Allocations: 4305)
+  Rendered layout layouts/application.html.erb (Duration: 25.2ms | Allocations: 6994)
+Completed 200 OK in 44ms (Views: 26.9ms | ActiveRecord: 2.5ms | Allocations: 9906)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 10:57:43 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.4ms | Allocations: 93)
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.4ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.3ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 3430)
+  Rendered layout layouts/application.html.erb (Duration: 13.6ms | Allocations: 5657)
+Completed 200 OK in 23ms (Views: 14.5ms | ActiveRecord: 1.7ms | Allocations: 7755)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 10:58:45 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 1.6ms | Allocations: 507)
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (1.0ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.6ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 23.3ms | Allocations: 4416)
+  Rendered layout layouts/application.html.erb (Duration: 37.8ms | Allocations: 7105)
+Completed 200 OK in 57ms (Views: 42.9ms | ActiveRecord: 3.3ms | Allocations: 9912)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 11:00:01 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 1.0ms | Allocations: 507)
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.3ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.9ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 12.9ms | Allocations: 4416)
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 7104)
+Completed 200 OK in 36ms (Views: 21.6ms | ActiveRecord: 2.7ms | Allocations: 10014)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 11:00:01 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 2.1ms | Allocations: 93)
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.5ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.5ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 15.7ms | Allocations: 3430)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 5642)
+Completed 200 OK in 32ms (Views: 18.2ms | ActiveRecord: 2.6ms | Allocations: 7738)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 11:00:02 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.7ms | Allocations: 93)
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.8ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.4ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 11.5ms | Allocations: 3430)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 5642)
+Completed 200 OK in 27ms (Views: 14.9ms | ActiveRecord: 2.1ms | Allocations: 7651)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 11:00:02 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 1.4ms | Allocations: 93)
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.3ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.3ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 15.7ms | Allocations: 3430)
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 5642)
+Completed 200 OK in 31ms (Views: 22.5ms | ActiveRecord: 1.4ms | Allocations: 7635)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 11:00:10 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.8ms | Allocations: 507)
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.7ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.9ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 15.6ms | Allocations: 4416)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 7104)
+Completed 200 OK in 32ms (Views: 18.5ms | ActiveRecord: 2.7ms | Allocations: 9923)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 11:00:13 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 1.0ms | Allocations: 93)
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.3ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.3ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 10.9ms | Allocations: 3430)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 5642)
+Completed 200 OK in 32ms (Views: 18.5ms | ActiveRecord: 2.1ms | Allocations: 7739)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 11:01:15 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 1.3ms | Allocations: 507)
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.3ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.2ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 13.0ms | Allocations: 4416)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 7104)
+Completed 200 OK in 41ms (Views: 24.5ms | ActiveRecord: 1.4ms | Allocations: 9911)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 11:01:16 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.3ms | Allocations: 93)
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.7ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.4ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 11.6ms | Allocations: 3430)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 5642)
+Completed 200 OK in 32ms (Views: 17.5ms | ActiveRecord: 2.4ms | Allocations: 7750)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 11:01:25 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 1.1ms | Allocations: 507)
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.9ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.4ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 4416)
+  Rendered layout layouts/application.html.erb (Duration: 17.7ms | Allocations: 7104)
+Completed 200 OK in 33ms (Views: 19.4ms | ActiveRecord: 2.8ms | Allocations: 9907)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 11:01:26 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.9ms | Allocations: 93)
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.3ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.3ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 10.8ms | Allocations: 3430)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 5642)
+Completed 200 OK in 24ms (Views: 17.7ms | ActiveRecord: 1.3ms | Allocations: 7744)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 11:03:28 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 1.9ms | Allocations: 507)
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.6ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.3ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 14.3ms | Allocations: 4416)
+  Rendered layout layouts/application.html.erb (Duration: 17.6ms | Allocations: 7104)
+Completed 200 OK in 34ms (Views: 20.3ms | ActiveRecord: 1.9ms | Allocations: 9913)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 11:04:30 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.5ms | Allocations: 93)
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.5ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.6ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 11.1ms | Allocations: 3430)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 5642)
+Completed 200 OK in 23ms (Views: 13.9ms | ActiveRecord: 2.1ms | Allocations: 7748)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 11:04:31 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.4ms | Allocations: 93)
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.5ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.8ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 13.9ms | Allocations: 3430)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 5642)
+Completed 200 OK in 31ms (Views: 16.3ms | ActiveRecord: 3.0ms | Allocations: 7635)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 11:06:31 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.7ms | Allocations: 93)
+  [1m[36mGroup Load (0.8ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.4ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (1.2ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 15.5ms | Allocations: 3430)
+  Rendered layout layouts/application.html.erb (Duration: 18.4ms | Allocations: 5642)
+Completed 200 OK in 31ms (Views: 17.0ms | ActiveRecord: 3.2ms | Allocations: 7639)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 11:06:32 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.4ms | Allocations: 93)
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (1.5ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.6ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 13.6ms | Allocations: 3430)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 5652)
+Completed 200 OK in 35ms (Views: 19.4ms | ActiveRecord: 3.8ms | Allocations: 7647)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 11:06:33 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.4ms | Allocations: 93)
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.5ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.3ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 12.3ms | Allocations: 3430)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 5648)
+Completed 200 OK in 28ms (Views: 14.7ms | ActiveRecord: 2.3ms | Allocations: 7646)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 11:07:07 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.7ms | Allocations: 490)
+  [1m[36mGroup Load (0.2ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.3ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.5ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 13.4ms | Allocations: 4402)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 7090)
+Completed 200 OK in 35ms (Views: 22.8ms | ActiveRecord: 2.2ms | Allocations: 9909)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 11:07:09 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.4ms | Allocations: 93)
+  [1m[36mGroup Load (0.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.3ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.3ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 3430)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 5642)
+Completed 200 OK in 24ms (Views: 12.9ms | ActiveRecord: 1.7ms | Allocations: 7750)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 11:07:32 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.3ms | Allocations: 93)
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.4ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.6ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 14.9ms | Allocations: 3430)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 5642)
+Completed 200 OK in 27ms (Views: 18.0ms | ActiveRecord: 2.1ms | Allocations: 7635)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 11:07:34 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 1.2ms | Allocations: 93)
+  [1m[36mGroup Load (1.5ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (1.5ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.5ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 23.0ms | Allocations: 3431)
+  Rendered layout layouts/application.html.erb (Duration: 28.0ms | Allocations: 5643)
+Completed 200 OK in 46ms (Views: 25.6ms | ActiveRecord: 4.2ms | Allocations: 7656)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 11:15:43 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 1.0ms | Allocations: 488)
+  [1m[36mGroup Load (1.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (1.4ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.6ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 51.4ms | Allocations: 15359)
+  Rendered layout layouts/application.html.erb (Duration: 51.6ms | Allocations: 15448)
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 13.3ms | Allocations: 21402)
+
+
+  
+ActionView::Template::Error (PG::UndefinedFunction: ERROR:  function sum(character varying) does not exist
+LINE 1: SELECT SUM("entities"."amount") FROM "entities" INNER JOIN "...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+):
+    11:         </div>
+    12:         <p class="group-icon"><%= group.icon %></p>
+    13:          <div class="fw-bold">
+    14:           $<%= group.entities.sum(:amount) %>
+    15:         </div>
+    16:          <p class="date_time"><%= group.created_at.strftime("%Y-%m-%d") %></p>
+    17:  </div>
+  
+app/views/groups/index.html.erb:14
+app/views/groups/index.html.erb:5
+Started GET "/" for 127.0.0.1 at 2023-06-07 11:16:05 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 0.9ms | Allocations: 488)
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.4ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.4ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 13.7ms | Allocations: 4402)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 7106)
+Completed 200 OK in 33ms (Views: 17.6ms | ActiveRecord: 2.5ms | Allocations: 10094)
+
+
+Started GET "/groups/1" for 127.0.0.1 at 2023-06-07 11:16:08 +0300
+Processing by GroupsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mGroup Load (0.4ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/show.html.erb within layouts/application
+  [1m[36mEntity Load (0.9ms)[0m  [1m[34mSELECT "entities".* FROM "entities" INNER JOIN "group_entities" ON "entities"."id" = "group_entities"."entity_id" WHERE "group_entities"."group_id" = $1 ORDER BY created_at DESC[0m  [["group_id", 1]]
+  ↳ app/views/groups/show.html.erb:4
+  Rendered groups/show.html.erb within layouts/application (Duration: 4.7ms | Allocations: 999)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 3204)
+Completed 200 OK in 22ms (Views: 8.3ms | ActiveRecord: 1.8ms | Allocations: 6244)
+
+
+Started GET "/" for 127.0.0.1 at 2023-06-07 11:16:23 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 2.2ms | Allocations: 488)
+  [1m[36mGroup Load (0.6ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.8ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.4ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 31.2ms | Allocations: 7258)
+  Rendered layout layouts/application.html.erb (Duration: 31.6ms | Allocations: 7335)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 2.9ms | Allocations: 10111)
+
+
+  
+ActionView::Template::Error (undefined method `expenses' for #<Group id: 1, name: "Mc Donalds", icon: "qweqweqwe", user_id: 1, created_at: "2023-06-05 12:03:38.505255000 +0000", updated_at: "2023-06-05 12:03:38.505255000 +0000">):
+    11:         </div>
+    12:         <p class="group-icon"><%= group.icon %></p>
+    13:          <div class="fw-bold">
+    14:           $<%= group.expenses.sum(:amount) %>
+    15:         </div>
+    16:          <p class="date_time"><%= group.created_at.strftime("%Y-%m-%d") %></p>
+    17:  </div>
+  
+app/views/groups/index.html.erb:14
+app/views/groups/index.html.erb:5
+Started GET "/" for 127.0.0.1 at 2023-06-07 11:16:36 +0300
+Processing by GroupsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/groups_controller.rb:4:in `index'
+  Rendering layout layouts/application.html.erb
+  Rendering groups/index.html.erb within layouts/application
+  Rendered navbar/_navbar.html.erb (Duration: 3.2ms | Allocations: 488)
+  [1m[36mGroup Load (0.3ms)[0m  [1m[34mSELECT "groups".* FROM "groups" WHERE "groups"."user_id" = $1[0m  [["user_id", 1]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mGroupEntity Load (0.4ms)[0m  [1m[34mSELECT "group_entities".* FROM "group_entities" WHERE "group_entities"."group_id" IN ($1, $2, $3, $4, $5)[0m  [["group_id", 1], ["group_id", 2], ["group_id", 3], ["group_id", 4], ["group_id", 5]]
+  ↳ app/views/groups/index.html.erb:5
+  [1m[36mEntity Load (0.8ms)[0m  [1m[34mSELECT "entities".* FROM "entities" WHERE "entities"."id" IN ($1, $2, $3)[0m  [["id", 13], ["id", 14], ["id", 15]]
+  ↳ app/views/groups/index.html.erb:5
+  Rendered groups/index.html.erb within layouts/application (Duration: 19.6ms | Allocations: 6006)
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 6083)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 2.1ms | Allocations: 8965)
+
+
+  
+ActionView::Template::Error (PG::UndefinedFunction: ERROR:  function sum(character varying) does not exist
+LINE 1: SELECT SUM("entities"."amount") FROM "entities" INNER JOIN "...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+):
+    11:         </div>
+    12:         <p class="group-icon"><%= group.icon %></p>
+    13:          <div class="fw-bold">
+    14:           $<%= group.entities.sum(:amount) %>
+    15:         </div>
+    16:          <p class="date_time"><%= group.created_at.strftime("%Y-%m-%d") %></p>
+    17:  </div>
+  
+app/views/groups/index.html.erb:14
+app/views/groups/index.html.erb:5
