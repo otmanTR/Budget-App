@@ -1,7 +1,7 @@
 # Budget App
 
 - [Budget App](#budget-app)
-- [Budget App ](#budget-app-)
+ - [Video Link 🚀](#video-link-)
    - [Render Deploy 🚀](#render-deploy-)
 - [📗 Table of Contents](#-table-of-contents)
   - [🛠 Built With ](#-built-with-)
@@ -23,10 +23,12 @@
 
 **Budget App** is a Ruby on Rails capstone project which you can create new categories, you can write new transactions and deploy it the categories and finally you can control how much money you spend each category.
 
+## Video Link 🚀
+[Video here](https://www.loom.com/share/869a3eb59d424b41a7d7e9b279444aec)
 
 ## Render Deploy 🚀
 
-[Live demo here]()
+[Live demo here](https://budgetapp-1jm2.onrender.com/)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -112,7 +114,7 @@ If you like this project consider giving it a star ⭐️.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-We would like to thank Microverse for giving us the opportunity to work on this project.
+I would like to thank Microverse for giving me the opportunity to work on this project.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
