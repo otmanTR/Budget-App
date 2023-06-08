@@ -67,12 +67,12 @@ end
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem 'capybara'
+  gem 'rspec-rails'
   gem 'selenium-webdriver'
   gem 'webdrivers'
-    gem 'rspec-rails'
 end
 
 gem 'cancancan', '~> 1.9'
 gem 'devise'
-gem 'rubocop', '>= 1.0', '< 2.0'
 gem 'rails-controller-testing'
+gem 'rubocop', '>= 1.0', '< 2.0'
