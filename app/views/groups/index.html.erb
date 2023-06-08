@@ -17,7 +17,11 @@
 <div class='container text-center mt-5'>
       <%@groups.each do |group|%>
      <div class="d-flex flex-direction-row justify-content-between bg-white text-align-center align-content-center border border-grey p-1 m-1">
-     <p ><%= group.icon %></p>
+       <% if group.icon.present? %>
+        <img src="<%= group.icon %>" alt="Category Icon", class= "img-fluid img-thumbnail w-25" />
+      <% else %>
+        <p>No Icon</p>
+      <% end %>
         <div >
             <h3><%= link_to group.name, group_path(id:group.id), class:'text-decoration-none text-secondary' %></h3>
             <p class="text-secondary" ><%= group.created_at.strftime("%Y-%m-%d")%></p>

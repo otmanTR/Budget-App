@@ -22,8 +22,10 @@
     <%= form.text_field :name, placeholder: "Category Name", class: "form-control rounded-0" %>
   </div>
     <div>
-        <%= form.file_field :icon, placeholder: "Icon", class: "form-control rounded-0" %>
-    </div> 
+ <%= form.label :icon, 'Icon URL', style: 'display: none;' %>
+
+  <%= form.text_field :icon, required: true, placeholder: "Enter the icon url", class: "form-control rounded-0" %>
+</div>
   <div class="d-flex flex-column fixed-bottom text-center bg-success w-100 p-3 ">
    <%= form.submit "Save", class:"bg-success text-white"  %> 
   </div>
