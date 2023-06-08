@@ -28,7 +28,7 @@
 
 ## Render Deploy 🚀
 
-[Live demo here](https://budgetapp-1jm2.onrender.com/)
+[Live demo here](https://budgetapp-1zk7.onrender.com/)
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -115,6 +115,7 @@ If you like this project consider giving it a star ⭐️.
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 I would like to thank Microverse for giving me the opportunity to work on this project.
+Special thanks  Gregoire Vella on Behance who shared his desing.
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
